@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "peg": "pegjs grammer.pegjs",
+    "dice": "node dice.js",
+    "ddice": "npm run peg && npm run dice",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
