@@ -21,6 +21,7 @@ class AbstractExecutor
 
     getResult()
     {
+        this.execute();
         return this.result;
     }
 

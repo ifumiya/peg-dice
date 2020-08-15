@@ -1,7 +1,9 @@
 const peg = require('./grammer.js');
 
 const parse = (input) => {
-    console.log(input, peg.parse(input));
+    const executor = peg.parse(input);
+    const result = executor.getResult();
+    console.log(input, result);
 };
 
 
