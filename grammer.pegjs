@@ -13,7 +13,7 @@ line
 
 // 1d100+5 <= 100
 formula
-= left:role _ op:[<=>] _ right:integer { return new ex.CompareExecutor(left, right, op); }
+= left:role _ op:[<=>]+ _ right:integer { return new ex.CompareExecutor(left, right, op.join('')); }
 / left:role                    { return left; }
 
 // 1d100 + 5
