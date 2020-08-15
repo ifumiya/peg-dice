@@ -27,7 +27,7 @@ dice
 = left:integer "d" right:integer { return new ex.DiceRoleExecutor(left, right); }
 
 integer
-= int:[0-9]+ { return new ex.NumberExecutor(Number.parseInt(int)); }
+= ints:[0-9]+ { return new ex.NumberExecutor(Number.parseInt(ints.join(''))); }
 
 // space
 _  = [ \t\r\n]*

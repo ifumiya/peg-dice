@@ -5,7 +5,7 @@ const util = require('util')
 const parse = (input) => {
     const executor = peg.parse(input);
     const result = executor.getResult();
-    console.log(util.inspect(executor.getDebugInfo(), {showHidden: false, depth: null}))
+    // console.log(util.inspect(executor, {showHidden: false, depth: null}))
     console.log(input, result);
 };
 
