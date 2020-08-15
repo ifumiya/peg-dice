@@ -33,6 +33,14 @@ class AbstractExecutor
         };
     }
 
+    getDebugInfo()
+    {
+        return {
+            child: _.map(this.childExecutor, executor => executor.getDebugInfo()),
+            mine: this.getResult(),
+        }
+    }
+
     echoMessage() { }
 }
 
