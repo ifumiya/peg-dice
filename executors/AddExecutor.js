@@ -5,6 +5,7 @@ class AddExecutor extends AbstractExecutor
 {
     constructor(left, right)
     {
+        super();
         this.childExecutor = { left, right };
     }
 

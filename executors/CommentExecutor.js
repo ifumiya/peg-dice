@@ -5,6 +5,7 @@ class CommentExecutor extends AbstractExecutor
     comment = '';
     constructor(executor, comment)
     {
+        super();
         this.childExecutor = { executor };
     }
 

@@ -6,6 +6,7 @@ class NumberExecutor extends AbstractExecutor
 
     constructor(value)
     {
+        super();
         this.value = value;
     }
 

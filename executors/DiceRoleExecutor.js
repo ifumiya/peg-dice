@@ -6,6 +6,7 @@ class DiceRoleExecutor extends AbstractExecutor
     dices = [];
     constructor(left, right)
     {
+        super();
         this.childExecutor = { left, right };
     }
 

@@ -6,6 +6,7 @@ class CompareExecutor extends AbstractExecutor
     operator = null;
     constructor(left, right, operator)
     {
+        super();
         this.childExecutor = { left, right };
         this.operator = operator;
     }
