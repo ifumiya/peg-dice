@@ -1,6 +1,5 @@
 const AbstractExecutor = require("./AbstractExecutor");
-
-AbstractExecutor = require('./AbstractExecutor');
+const _ = require('lodash');
 
 class AddExecutor extends AbstractExecutor
 {
@@ -17,6 +16,4 @@ class AddExecutor extends AbstractExecutor
     }
 }
 
-module.exports = {
-    AddExecutor
-};
+module.exports = AddExecutor;

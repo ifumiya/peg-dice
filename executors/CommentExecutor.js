@@ -1,7 +1,5 @@
 const AbstractExecutor = require("./AbstractExecutor");
 
-AbstractExecutor = require('./AbstractExecutor');
-
 class CommentExecutor extends AbstractExecutor
 {
     comment = '';
@@ -22,6 +20,4 @@ class CommentExecutor extends AbstractExecutor
 
 }
 
-module.exports = {
-    CommentExecutor
-};
+module.exports = CommentExecutor;

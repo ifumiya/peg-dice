@@ -1,6 +1,5 @@
 const AbstractExecutor = require("./AbstractExecutor");
-
-AbstractExecutor = require('./AbstractExecutor');
+const _ = require('lodash');
 
 class DiceRoleExecutor extends AbstractExecutor
 {
@@ -27,6 +26,4 @@ class DiceRoleExecutor extends AbstractExecutor
 
 }
 
-module.exports = {
-    DiceRoleExecutor
-};
+module.exports = DiceRoleExecutor;

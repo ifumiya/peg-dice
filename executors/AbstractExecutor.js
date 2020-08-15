@@ -35,6 +35,4 @@ class AbstractExecutor
     echoMessage() { }
 }
 
-module.exports = {
-    AbstractExecutor
-};
+module.exports = AbstractExecutor;

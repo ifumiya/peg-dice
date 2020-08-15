@@ -1,7 +1,5 @@
 const AbstractExecutor = require("./AbstractExecutor");
 
-AbstractExecutor = require('./AbstractExecutor');
-
 class NumberExecutor extends AbstractExecutor
 {
     value = 0
@@ -22,6 +20,4 @@ class NumberExecutor extends AbstractExecutor
     }
 }
 
-module.exports = {
-    NumberExecutor
-};
+module.exports = NumberExecutor;

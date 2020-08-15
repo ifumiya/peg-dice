@@ -37,6 +37,4 @@ class CompareExecutor extends AbstractExecutor
 
 }
 
-module.exports = {
-    CompareExecutor
-};
+module.exports = CompareExecutor;
