@@ -2,7 +2,7 @@ const AbstractExecutor = require("./AbstractExecutor");
 
 AbstractExecutor = require('./AbstractExecutor');
 
-class NumberExecutor extends AbstractExecutor
+class DiceRoleExecutor extends AbstractExecutor
 {
     dices = [];
     constructor(left, right)
@@ -28,5 +28,5 @@ class NumberExecutor extends AbstractExecutor
 }
 
 module.exports = {
-    NumberExecutor
+    DiceRoleExecutor
 };
