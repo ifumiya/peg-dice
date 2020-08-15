@@ -26,7 +26,10 @@ class AbstractExecutor
 
     getExecutors() 
     {
-        return _.map(this.childExecutor, executor => executor.getExecutors());
+        return {
+            child: _.map(this.childExecutor, executor => executor.getExecutors()),
+            mine: this,
+        };
     }
 
     echoMessage() { }
